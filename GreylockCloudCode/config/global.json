@@ -1,0 +1,17 @@
+{
+  "global": {
+    "parseVersion": "1.4.2"
+  },
+  "applications": {
+    "GreylockCloudCode": {
+      "link": "greylockhackfest"
+    },
+    "_default": {
+      "link": "greylockhackfest"
+    },
+    "greylockhackfest": {
+      "applicationId": "rqx952GFL9NF8RlTqPzCazKANGmvnNEPcskzJpPM",
+      "masterKey": "PsbS4dJJceQRzYeIqWMbepJeRVCHtuuFtpLWCAGd"
+    }
+  }
+}
