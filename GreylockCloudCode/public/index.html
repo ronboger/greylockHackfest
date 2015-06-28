@@ -1,62 +1,62 @@
 <html>
 
-<<<<<<< HEAD
 <head>
-    <title>ayy lmao</title>
+    <title>nearme - a professional discovery app</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    
     <script type="text/javascript" src="//platform.linkedin.com/in.js">
     api_key: 75 qd365qzyvqso
     authorize: [AUTHORIZE]
     lang: [LANG_LOCALE]
     </script>
 </head>
-=======
->>>>>>> 84f29989331d1af112de2e4dbefa75fbcc2b5c04
 <script src="//www.parsecdn.com/js/parse-1.4.2.min.js"></script>
-    <script type="text/javascript">
-    Parse.initialize("rqx952GFL9NF8RlTqPzCazKANGmvnNEPcskzJpPM", "y0lri40GdFPFYugI0EoQByLDrXLhLrkIJA5Zgwun");
-    var TestObject = Parse.Object.extend("TestObject");
-    var testObject = new TestObject();
-    testObject.save({foo: "bar"}).then(function(object) {
-        alert("yay! it worked");
-    }); 
-    
-    // Parse.Cloud.run("tourCreated");
+<script type="text/javascript">
+Parse.initialize("rqx952GFL9NF8RlTqPzCazKANGmvnNEPcskzJpPM", "y0lri40GdFPFYugI0EoQByLDrXLhLrkIJA5Zgwun");
+var TestObject = Parse.Object.extend("TestObject");
+var testObject = new TestObject();
+testObject.save({
+    foo: "bar"
+}).then(function(object) {
+    console.log("yay! it worked");
+});
 
-    </script>
-
-  </head>
-  <body>
-<script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          appId      : '724994424276728',
-          xfbml      : true,
-          version    : 'v2.3'
-        });
-      };
-<<<<<<< HEAD
+// Parse.Cloud.run("tourCreated");
 </script>
-=======
-=======
-<head>
-    <title>ayy lmao</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script type="text/javascript" src="../cloud/main.js"></script>
-    <script type="text/javascript" src="//platform.linkedin.com/in.js">
-    api_key: 75 qd365qzyvqso
-    authorize: [AUTHORIZE]
-    lang: [LANG_LOCALE]
-    </script>
-</head>
->>>>>>> 84f29989331d1af112de2e4dbefa75fbcc2b5c04
 
-    <div>
-        <h1>Congratulations! You're already hosting with Parse.</h1>
-        <p>To get started, edit this file at <em>public/index.html</em> and start adding static content.</p>
-        <p>If you want something a bit more dynamic, delete this file and check out <a href="https://parse.com/docs/hosting_guide#webapp">our hosting docs</a>.</p>
-        <p>weeeee i'm using sublime on the cloud!</p>
+<body>
+    <script>
+    window.fbAsyncInit = function() {
+        Parse.FacebookUtils.init({ // this line replaces FB.init({
+            appId: '724994424276728', // Facebook App ID
+            status: true, // check Facebook Login status
+            cookie: true, // enable cookies to allow Parse to access the session
+            xfbml: true, // initialize Facebook social plugins on the page
+            version: 'v2.3' // point to the latest Facebook Graph API version
+        });
+
+        // Run code after the Facebook SDK is loaded.
+    };
+
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {
+            return;
+        }
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div class="wrapper">
+        <div class="image">
+            <img src="nearme.png" style="padding-left:60px;">
+        </div>
+        <div class="text">
+            <h1>nearme - a professional discovery app</h1>
+            <p>nearme is a professional discovery app that helps you find who you don't know but really should in your current location</p>
+            <p>Check out our source code on <a href="https://github.com/ronnyb29/greylockHackfest">github</a>.</p>
+        </div>
     </div>
 </body>
 

@@ -2,21 +2,27 @@ body {
         font-family: Helvetica, Arial, sans-serif;
     }
     
-    div {
+    .wrapper {
         width: 800px;
         height: 400px;
-        margin: 40px auto;
-        padding: 20px;
-        border: 2px solid #5298fc;
+	/*vertical-align:middle;*/
+margin-left:auto;
+margin-right:auto;
+padding-top:200px;
+        border: .5px solid #5298fc;
+background-color: #efefef;
+	opacity: .75;
     }
     
     h1 {
         font-size: 30px;
         margin: 0;
+	text-align:center;
     }
     
     p {
         margin: 40px 0;
+text-align:center;
     }
     
     em {
@@ -27,3 +33,9 @@ body {
         color: #5298fc;
         text-decoration: none;
     }
+	body {
+	width: 100%;
+	height: 100%;
+	background: url(../mtranier.jpg) no-repeat center center fixed;
+	background-size:cover;
+}
