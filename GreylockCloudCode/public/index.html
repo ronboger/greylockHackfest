@@ -1,57 +1,38 @@
 <html>
 
-<<<<<<< HEAD
 <head>
     <title>ayy lmao</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    
     <script type="text/javascript" src="//platform.linkedin.com/in.js">
     api_key: 75 qd365qzyvqso
     authorize: [AUTHORIZE]
     lang: [LANG_LOCALE]
     </script>
 </head>
-=======
->>>>>>> 84f29989331d1af112de2e4dbefa75fbcc2b5c04
 <script src="//www.parsecdn.com/js/parse-1.4.2.min.js"></script>
-    <script type="text/javascript">
-    Parse.initialize("rqx952GFL9NF8RlTqPzCazKANGmvnNEPcskzJpPM", "y0lri40GdFPFYugI0EoQByLDrXLhLrkIJA5Zgwun");
-    var TestObject = Parse.Object.extend("TestObject");
-    var testObject = new TestObject();
-    testObject.save({foo: "bar"}).then(function(object) {
-        alert("yay! it worked");
-    }); 
-    
-    // Parse.Cloud.run("tourCreated");
+<script type="text/javascript">
+Parse.initialize("rqx952GFL9NF8RlTqPzCazKANGmvnNEPcskzJpPM", "y0lri40GdFPFYugI0EoQByLDrXLhLrkIJA5Zgwun");
+var TestObject = Parse.Object.extend("TestObject");
+var testObject = new TestObject();
+testObject.save({
+    foo: "bar"
+}).then(function(object) {
+    console.log("yay! it worked");
+});
 
-    </script>
-
-  </head>
-  <body>
-<script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          appId      : '724994424276728',
-          xfbml      : true,
-          version    : 'v2.3'
-        });
-      };
-<<<<<<< HEAD
+// Parse.Cloud.run("tourCreated");
 </script>
-=======
-=======
-<head>
-    <title>ayy lmao</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script type="text/javascript" src="../cloud/main.js"></script>
-    <script type="text/javascript" src="//platform.linkedin.com/in.js">
-    api_key: 75 qd365qzyvqso
-    authorize: [AUTHORIZE]
-    lang: [LANG_LOCALE]
-    </script>
-</head>
->>>>>>> 84f29989331d1af112de2e4dbefa75fbcc2b5c04
 
+<body>
+    <script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId: '724994424276728',
+            xfbml: true,
+            version: 'v2.3'
+        });
+    };
+    </script>
     <div>
         <h1>Congratulations! You're already hosting with Parse.</h1>
         <p>To get started, edit this file at <em>public/index.html</em> and start adding static content.</p>
