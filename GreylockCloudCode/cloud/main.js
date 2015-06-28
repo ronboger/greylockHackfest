@@ -85,12 +85,17 @@ Parse.Cloud.define("postProfile", function(request, response) {
     var Profile = Parse.Object.extend("Profile");
     var profile = new Profile();
 
+    profile.set("name", "Bryan Keller");
+    // profile.set("profilePictureFile", );
+    profile.set("headline", "ay lmaoing since 1995");
+
+
     profile.save(null, {
         success: function(profile) {
-            profile.set("name", "Bryan Keller");
-            profile.set("profilePictureFile", "https://media.licdn.com/media/p/1/005/04d/21b/2dc5482.jpg");
-            profile.set("headline", "ay lmaoing since 1995");
-            profile.save();
+
+            response.success();
+            console.log("dis can save");
         }
     })
 });
+
