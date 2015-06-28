@@ -1,11 +1,4 @@
-// Use Parse.Cloud.define to define as many cloud functions as you want.
-// For example:
-// Parse.Cloud.define("hello", function(request, response) {
-//   response.success("Hello world!");
-// });
-
 Parse.initialize("rqx952GFL9NF8RlTqPzCazKANGmvnNEPcskzJpPM", "y0lri40GdFPFYugI0EoQByLDrXLhLrkIJA5Zgwun");
-// console.log("stuff");
 
 Parse.Cloud.define("createGameScores", function(request, response) {
     var GameScore = Parse.Object.extend("GameScore");
@@ -99,3 +92,41 @@ Parse.Cloud.define("postProfile", function(request, response) {
     })
 });
 
+var names = ['Phil Fung', 'Charles Jolley', 'Kenny To', 'Sarah Guo',
+    'Dylan Field', 'Andrew Lee', 'Erin Yang', 'Victoria Dudin', 'Richard  Tom',
+    'Alex Davis', 'Kevin Liu', 'Joshua   Dorsey'
+];
+
+var headlines = [
+    'Operator,  CTO',
+    'Jack Search, CEO',
+    'Rubrik, Founding Engineer',
+    'Greylock, Associate',
+    'Figma, CEO',
+    'Firebase, CTO',
+    'Workday, Sr. Director Product Management',
+    'Facebook, Engineering Manager',
+    'Vessel, CTO',
+    'Airbnb, Engineering Manager',
+    'Nextdoor, Director of Engineering',
+    'SVB, VP'
+];
+
+
+Parse.Cloud.define("addFakeData", function(request, response) {
+    for (var i = names.length - 1; i >= 0; i--) {
+        var Profile = Parse.Object.extend("Profile");
+        var profile = new Profile();
+
+        profile.set("name", names[i]);
+        // profile.set("profilePictureFile", );
+        profile.set("headline", headlines[i]);
+
+        profile.save(null, {
+            success: function(profile) {
+                response.success();
+                console.log("dis can save");
+            }
+        });
+    };
+})
