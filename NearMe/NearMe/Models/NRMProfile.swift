@@ -15,6 +15,8 @@ class NRMProfile: PFObject, PFSubclassing {
     @NSManaged var name: String
     @NSManaged var headline: String
     @NSManaged var profilePictureFile: PFFile
+    @NSManaged var location: PFGeoPoint
+    @NSManaged var skills: NSArray
     
     var cachedProfilePicture: UIImage?
     

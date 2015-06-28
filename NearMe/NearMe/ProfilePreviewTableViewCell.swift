@@ -19,6 +19,7 @@ class ProfilePreviewTableViewCell: UITableViewCell {
             self.nameLabel.text = self.profile?.name
             self.headlineLabel.text = self.profile?.headline
             self.profilePictureImageView.image = self.profile?.cachedProfilePicture
+            println(self.profile!.skills)
         }
     }
     
@@ -29,7 +30,7 @@ class ProfilePreviewTableViewCell: UITableViewCell {
     override func layoutSubviews() {
         super.layoutSubviews()
         
-        self.profilePictureImageView.layer.borderColor = UIColor.redColor().CGColor
+        self.profilePictureImageView.layer.borderColor = UIColor(red:0.29, green:0.41, blue:0.66, alpha:1).CGColor
         self.profilePictureImageView.layer.borderWidth = 3
         self.profilePictureImageView.layer.cornerRadius = self.profilePictureImageView.bounds.size.width / 2
     }

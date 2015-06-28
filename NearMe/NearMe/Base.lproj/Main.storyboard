@@ -112,14 +112,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jcp-wZ-cNI">
-                                <rect key="frame" x="179" y="84" width="243" height="243"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="243" id="PTE-UM-Dql"/>
-                                    <constraint firstAttribute="width" constant="243" id="WhT-Ru-bgn"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Last" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4cH-V8-86Z">
                                 <rect key="frame" x="16" y="347" width="568" height="36"/>
                                 <animations/>
@@ -134,24 +126,87 @@
                                 <color key="textColor" red="0.40128968250000002" green="0.40128968250000002" blue="0.40128968250000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jcp-wZ-cNI">
+                                <rect key="frame" x="179" y="84" width="243" height="243"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="243" id="PTE-UM-Dql"/>
+                                    <constraint firstAttribute="width" constant="243" id="WhT-Ru-bgn"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="First Skill" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="AHG-eh-wBs">
+                                <rect key="frame" x="179" y="443" width="243" height="21"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.12549019607843137" green="0.57647058823529407" blue="0.32156862745098042" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Second Skill" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="xij-wB-dQM">
+                                <rect key="frame" x="179" y="472" width="243" height="21"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.14901960784313725" green="0.67843137254901964" blue="0.45098039215686275" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Third Skill" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="CRt-uX-pMi">
+                                <rect key="frame" x="179" y="501" width="243" height="21"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.18823529411764706" green="0.86274509803921573" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Fourth Skill" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="3N9-JV-R9K">
+                                <rect key="frame" x="179" y="530" width="243" height="21"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.17034650126858955" green="0.82934695512820511" blue="0.72797196806671838" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Fifth Skill" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="1H9-Fj-ZLF">
+                                <rect key="frame" x="179" y="559" width="243" height="21"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.18431372549019609" green="0.85490196078431369" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="CRt-uX-pMi" firstAttribute="top" secondItem="xij-wB-dQM" secondAttribute="bottom" constant="8" id="1BM-lF-eSY"/>
                             <constraint firstItem="4cH-V8-86Z" firstAttribute="top" secondItem="jcp-wZ-cNI" secondAttribute="bottom" constant="20" id="589-jl-6PF"/>
+                            <constraint firstItem="CRt-uX-pMi" firstAttribute="leading" secondItem="jcp-wZ-cNI" secondAttribute="leading" id="9HM-01-5ka"/>
+                            <constraint firstItem="jcp-wZ-cNI" firstAttribute="leading" secondItem="xij-wB-dQM" secondAttribute="leading" id="CYo-80-Ce9"/>
+                            <constraint firstItem="1H9-Fj-ZLF" firstAttribute="leading" secondItem="jcp-wZ-cNI" secondAttribute="leading" id="DeF-91-ll1"/>
                             <constraint firstAttribute="trailing" secondItem="gB7-zY-nlI" secondAttribute="trailing" constant="16" id="IqB-Pl-coG"/>
+                            <constraint firstItem="1H9-Fj-ZLF" firstAttribute="top" secondItem="3N9-JV-R9K" secondAttribute="bottom" constant="8" id="LRX-6Z-2XW"/>
+                            <constraint firstItem="AHG-eh-wBs" firstAttribute="leading" secondItem="jcp-wZ-cNI" secondAttribute="leading" id="Ryg-jS-20w"/>
                             <constraint firstItem="gB7-zY-nlI" firstAttribute="top" secondItem="4cH-V8-86Z" secondAttribute="bottom" constant="8" id="WYx-dE-HfA"/>
                             <constraint firstItem="jcp-wZ-cNI" firstAttribute="top" secondItem="3I6-wk-q0X" secondAttribute="bottom" constant="20" id="Zfm-H9-7UE"/>
                             <constraint firstAttribute="centerX" secondItem="jcp-wZ-cNI" secondAttribute="centerX" id="bKK-nY-z8c"/>
                             <constraint firstItem="gB7-zY-nlI" firstAttribute="leading" secondItem="VnR-oW-mCt" secondAttribute="leading" constant="16" id="cwj-Iv-cjY"/>
                             <constraint firstItem="4cH-V8-86Z" firstAttribute="leading" secondItem="VnR-oW-mCt" secondAttribute="leading" constant="16" id="d9a-S0-fOX"/>
+                            <constraint firstItem="3N9-JV-R9K" firstAttribute="top" secondItem="CRt-uX-pMi" secondAttribute="bottom" constant="8" id="foj-JA-Ctq"/>
                             <constraint firstAttribute="trailing" secondItem="4cH-V8-86Z" secondAttribute="trailing" constant="16" id="lam-dq-bDN"/>
+                            <constraint firstItem="u5k-SR-d13" firstAttribute="top" secondItem="1H9-Fj-ZLF" secondAttribute="bottom" constant="20" id="sw6-hq-txA"/>
+                            <constraint firstItem="xij-wB-dQM" firstAttribute="top" secondItem="AHG-eh-wBs" secondAttribute="bottom" constant="8" id="yV2-0Z-ngG"/>
+                            <constraint firstItem="jcp-wZ-cNI" firstAttribute="leading" secondItem="3N9-JV-R9K" secondAttribute="leading" id="yiv-c2-prr"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="fifthSkillBar" destination="1H9-Fj-ZLF" id="6m2-ql-fMH"/>
+                        <outlet property="firstSkillBar" destination="AHG-eh-wBs" id="xgB-4k-xCJ"/>
+                        <outlet property="fourthSkillBar" destination="3N9-JV-R9K" id="iS2-5t-fh7"/>
                         <outlet property="headlineLabel" destination="gB7-zY-nlI" id="s7h-Sd-44S"/>
                         <outlet property="nameLabel" destination="4cH-V8-86Z" id="xxv-hI-Iso"/>
                         <outlet property="profilePictureImageView" destination="jcp-wZ-cNI" id="mER-6A-wRM"/>
+                        <outlet property="secondSkillBar" destination="xij-wB-dQM" id="5b5-QK-4Cr"/>
+                        <outlet property="thirdSkillBar" destination="CRt-uX-pMi" id="qKd-iB-6yT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aIJ-Cg-HwI" userLabel="First Responder" sceneMemberID="firstResponder"/>

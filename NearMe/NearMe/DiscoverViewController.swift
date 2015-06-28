@@ -19,6 +19,16 @@ class DiscoverViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let dataRefreshTimer = NSTimer.scheduledTimerWithTimeInterval(5.0, target: self, selector: Selector("refreshDataAsynchonously"), userInfo: nil, repeats: true)
+        dataRefreshTimer.fire()
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
+    func refreshDataAsynchonously() {
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), { () -> Void in
             
             let query = NRMProfile.query()!
@@ -39,12 +49,7 @@ class DiscoverViewController: UIViewController {
             
         })
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+    
     
     // MARK: - Navigation
     
