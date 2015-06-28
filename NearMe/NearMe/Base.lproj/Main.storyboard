@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="15A204h" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="2JL-mg-NBX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="15A204h" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="X7p-LQ-13u">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--NearMe-->
@@ -97,7 +98,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1414" y="399"/>
+            <point key="canvasLocation" x="1356" y="399"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="za0-6s-g3U">
@@ -155,7 +156,82 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aIJ-Cg-HwI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2168" y="399"/>
+            <point key="canvasLocation" x="2112" y="399"/>
+        </scene>
+        <!--Social Connection View Controller-->
+        <scene sceneID="zeB-hy-9Z7">
+            <objects>
+                <viewController id="X7p-LQ-13u" customClass="SocialConnectionViewController" customModule="NearMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Uaq-y3-6JB"/>
+                        <viewControllerLayoutGuide type="bottom" id="6fp-Ey-uD2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Wsg-qF-ciO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sqr-G0-ncd">
+                                <rect key="frame" x="56" y="180" width="240" height="240"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.21255305541440206" green="0.39745082184606878" blue="0.81542467948717945" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Sqr-G0-ncd" secondAttribute="height" multiplier="1:1" id="S0R-73-WYs"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Facebook">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="facebookButtonTapped" destination="X7p-LQ-13u" eventType="touchUpInside" id="hu9-in-M6e"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Gb-8D-Yis">
+                                <rect key="frame" x="304" y="180" width="240" height="239.5"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.60663737337857193" green="0.36647188535104003" blue="0.81542467948717945" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="9Gb-8D-Yis" secondAttribute="height" multiplier="1:1" id="dU1-Ke-dB7"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="LinkedIn">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="linkedinButtonTapped" destination="X7p-LQ-13u" eventType="touchUpInside" id="CMB-KS-DXi"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get started by connecting your social media accounts" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wWN-Bz-s3a">
+                                <rect key="frame" x="32" y="103.5" width="536" height="26.5"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="9Gb-8D-Yis" secondAttribute="centerY" id="4Yt-0J-54p"/>
+                            <constraint firstItem="Sqr-G0-ncd" firstAttribute="trailing" secondItem="Wsg-qF-ciO" secondAttribute="centerX" constant="-4" id="8Hg-fw-5dk"/>
+                            <constraint firstItem="Sqr-G0-ncd" firstAttribute="width" secondItem="Wsg-qF-ciO" secondAttribute="width" multiplier="0.4" id="MjK-5M-xAC"/>
+                            <constraint firstItem="9Gb-8D-Yis" firstAttribute="width" secondItem="Wsg-qF-ciO" secondAttribute="width" multiplier="0.4" id="Wg7-WL-c7g"/>
+                            <constraint firstAttribute="centerY" secondItem="Sqr-G0-ncd" secondAttribute="centerY" id="hHb-Tk-bz5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wWN-Bz-s3a" secondAttribute="trailing" constant="16" id="jzG-4m-zTz"/>
+                            <constraint firstItem="9Gb-8D-Yis" firstAttribute="top" secondItem="wWN-Bz-s3a" secondAttribute="bottom" constant="50" id="mfL-eC-gUz"/>
+                            <constraint firstItem="wWN-Bz-s3a" firstAttribute="leading" secondItem="Wsg-qF-ciO" secondAttribute="leadingMargin" constant="16" id="oLa-nb-M9D"/>
+                            <constraint firstItem="9Gb-8D-Yis" firstAttribute="leading" secondItem="Wsg-qF-ciO" secondAttribute="centerX" constant="4" id="oQF-v3-wWa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="facebookButton" destination="Sqr-G0-ncd" id="Hi7-Tw-nuU"/>
+                        <outlet property="linkedinButton" destination="9Gb-8D-Yis" id="jFl-Fx-yKV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h4X-Mb-FXY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1315" y="-425"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="5G3-9K-0Yz">
@@ -239,7 +315,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lx0-UU-k1J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1414" y="-383"/>
+            <point key="canvasLocation" x="602" y="-403"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xti-UO-fUb">
