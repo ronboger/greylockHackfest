@@ -52,6 +52,7 @@ class DiscoverViewController: UIViewController {
         let profile = self.discoveryTableViewDataSource.profiles[self.discoveryTableView.indexPathForSelectedRow()!.row]
         let profileViewController = segue.destinationViewController as! ProfileViewController
         profileViewController.profile = profile
+        self.discoveryTableView.deselectRowAtIndexPath(self.discoveryTableView.indexPathForSelectedRow()!, animated: true)
     }
 }
 

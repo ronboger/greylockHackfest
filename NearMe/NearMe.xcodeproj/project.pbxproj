@@ -28,7 +28,6 @@
 		93A1E9F81B3F754700A1C94F /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 93A1E9F71B3F754700A1C94F /* libsqlite3.dylib */; };
 		93A1E9FB1B3F992C00A1C94F /* ProfilePreviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A1E9FA1B3F992C00A1C94F /* ProfilePreviewTableViewCell.swift */; };
 		93A1E9FF1B3F9C7E00A1C94F /* DiscoveryTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A1E9FE1B3F9C7E00A1C94F /* DiscoveryTableViewDataSource.swift */; };
-		93A1EA011B3FB4B800A1C94F /* sanic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 93A1EA001B3FB4B800A1C94F /* sanic.jpg */; };
 		93A1EA031B3FBA8E00A1C94F /* NRMProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A1EA021B3FBA8E00A1C94F /* NRMProfile.swift */; };
 		93A1EA051B3FD49A00A1C94F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A1EA041B3FD49A00A1C94F /* ProfileViewController.swift */; };
 		93A1EA071B3FE22D00A1C94F /* SocialConnectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A1EA061B3FE22D00A1C94F /* SocialConnectionViewController.swift */; };
@@ -70,7 +69,6 @@
 		93A1E9F71B3F754700A1C94F /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		93A1E9FA1B3F992C00A1C94F /* ProfilePreviewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilePreviewTableViewCell.swift; sourceTree = "<group>"; };
 		93A1E9FE1B3F9C7E00A1C94F /* DiscoveryTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiscoveryTableViewDataSource.swift; path = Models/DiscoveryTableViewDataSource.swift; sourceTree = "<group>"; };
-		93A1EA001B3FB4B800A1C94F /* sanic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sanic.jpg; sourceTree = "<group>"; };
 		93A1EA021B3FBA8E00A1C94F /* NRMProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NRMProfile.swift; path = Models/NRMProfile.swift; sourceTree = "<group>"; };
 		93A1EA041B3FD49A00A1C94F /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		93A1EA061B3FE22D00A1C94F /* SocialConnectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialConnectionViewController.swift; sourceTree = "<group>"; };
@@ -143,7 +141,6 @@
 		931299F81B3F5E0700A76C1D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				93A1EA001B3FB4B800A1C94F /* sanic.jpg */,
 				931299F91B3F5E0700A76C1D /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -319,7 +316,6 @@
 			files = (
 				93129A001B3F5E0700A76C1D /* Main.storyboard in Resources */,
 				93129A051B3F5E0700A76C1D /* LaunchScreen.xib in Resources */,
-				93A1EA011B3FB4B800A1C94F /* sanic.jpg in Resources */,
 				93129A021B3F5E0700A76C1D /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
