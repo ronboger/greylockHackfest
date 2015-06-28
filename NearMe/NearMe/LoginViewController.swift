@@ -12,8 +12,8 @@ import Parse
 
 class LoginViewController: UIViewController {
     
-    @IBOutlet var emailTextField: UITextField!
-    @IBOutlet var passwordtextField: UITextField!
+    @IBOutlet private weak var emailTextField: UITextField!
+    @IBOutlet private weak var passwordtextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
