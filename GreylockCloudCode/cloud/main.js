@@ -7,7 +7,7 @@
 Parse.initialize("rqx952GFL9NF8RlTqPzCazKANGmvnNEPcskzJpPM", "y0lri40GdFPFYugI0EoQByLDrXLhLrkIJA5Zgwun");
 // console.log("stuff");
 
-Parse.Cloud.beforeSave("stuff", function(request, response) {
+Parse.Cloud.define("createGameScores", function(request, response) {
     var GameScore = Parse.Object.extend("GameScore");
     var gameScore = new GameScore();
 
