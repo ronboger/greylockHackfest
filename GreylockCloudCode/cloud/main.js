@@ -5,6 +5,4 @@ Parse.Cloud.define("hello", function(request, response) {
   response.success("Hello world!");
 });
 
-
-var x = 759;
-
+var x = 9;
