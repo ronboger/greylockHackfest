@@ -30,15 +30,15 @@ Parse.Cloud.define("createGameScores", function(request, response) {
 
 
 Parse.Cloud.define('httpRequest', function(request, response) {
-        Parse.Cloud.httpRequest({
-            url: 'http://www.parse.com/',
-            success: function(httpResponse) {
-                console.log(httpResponse.text);
-            },
-            error: function(httpResponse) {
-                console.error('Request failed with response code ' + httpResponse.status);
-            }
-        });
+    Parse.Cloud.httpRequest({
+        url: 'http://www.parse.com/',
+        success: function(httpResponse) {
+            console.log(httpResponse.text);
+        },
+        error: function(httpResponse) {
+            console.error('Request failed with response code ' + httpResponse.status);
+        }
+    });
 });
 //require("cloud/linkedin_api.js")
 //require("cloud/facebook_api.js")
@@ -60,16 +60,16 @@ Parse.Cloud.define("tourCreated", function(request, response) {
     });
 });
 
-Parse.Cloud.define("profileCreated", function(request, response) {
+Parse.Cloud.define("testProfileCreated", function(request, response) {
 
-    var Profile = Parse.Object.extend("Profile");
-    var profile = new Profile();
+    var TestProfile = Parse.Object.extend("TestProfile");
+    var testProfile = new TestProfile();
 
-    profile.set("name", "Bryan Keller");
-    profile.set("profilePictureFile", "https://media.licdn.com/media/p/1/005/04d/21b/2dc5482.jpg");
-    profile.set("headline", "ay lmaoing since 1995");
-    profile.save(null, {
-        success: function(profile) {
+    testProfile.set("name", "Bryan Keller");
+    testProfile.set("profilePictureFile", "https://media.licdn.com/media/p/1/005/04d/21b/2dc5482.jpg");
+    testProfile.set("headline", "ay lmaoing since 1995");
+    testProfile.save(null, {
+        success: function(testProfile) {
             response.success();
             console.log("Save ok");
         },
@@ -78,4 +78,19 @@ Parse.Cloud.define("profileCreated", function(request, response) {
             console.log("bryan can't save properly :(");
         }
     });
+});
+
+
+Parse.Cloud.define("postProfile", function(request, response) {
+    var Profile = Parse.Object.extend("Profile");
+    var profile = new Profile();
+
+    profile.save(null, {
+        success: function(profile) {
+            profile.set("name", "Bryan Keller");
+            profile.set("profilePictureFile", "https://media.licdn.com/media/p/1/005/04d/21b/2dc5482.jpg");
+            profile.set("headline", "ay lmaoing since 1995");
+            profile.save();
+        }
+    })
 });
